@@ -1,0 +1,194 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body {
+  font-family: "Patua One", cursive;
+  color: #efefef;
+  font-size: 16px;
+}
+
+a {
+  position: relative;
+  font-size: 2em;
+  color: #efefef;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #efefef;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a.tickets {
+  font-size: 2.4em;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: #fff;
+}
+
+.opacity-filter {
+  width: 95%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 2.5%;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+#homeSection {
+  width: 100%;
+  height: 100%;
+  background: url(../img/18_A-Pals_0200-vig.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#homeSection h1 {
+  color: #fff;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 0;
+  position: relative;
+  top: 20%;
+}
+
+#homeSection ul {
+  position: relative;
+  top: 20%;
+  width: 10rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+#homeSection ul li {
+  padding: 0.15rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+#aboutSection {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+#aboutSection h2 {
+  font-size: 2em;
+  text-align: center;
+  margin: 10rem auto 0;
+}
+
+#aboutSection .home-link {
+  position: relative;
+  margin: 5rem auto 0;
+  display: block;
+  width: 5.5rem;
+  text-align: center;
+}
+
+#aboutSection .text-area {
+  position: relative;
+  width: 40rem;
+  margin: 3rem auto;
+}
+
+#aboutSection .text-area .about-us {
+  font-family: Courgette, cursive;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-device-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  #aboutSection .text-area {
+    max-width: 90%;
+  }
+
+  #aboutSection .text-area .about-us {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+
+  #aboutSection .text-area .about-us {
+    font-size: 1.6em;
+  }
+}
